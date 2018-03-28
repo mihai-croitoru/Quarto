@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Quarto</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnPass">Transfer The Piece</string>
+    <string name="btnVin">Quarto</string>
+    <string name="btnReturn">Return To Game</string>
+    <string name="btnRestart"> Restart </string>
+    <string name="choiceFigure">Select a piece for the opponent\'s move</string>
+    <string name="move">Resemble the selected figure</string>
+    <string name="vinLine">Indicate a series of 4 similar in one feature figures</string>
+    <string name="congratulations"> Congratulations you won !</string>
+    <string name="pass">Pass the move</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="rules"> Rules </string>
+    <string name="rules1">One</string>
+    <string name="rules2">Two</string>
+    <string name="rules3">Three</string>
+    <string name="quartoRules">
+                                Players in any convenient way determine who will make the first move. The player who walks first selects any of the 16 pieces and submits it to his opponent.
+                                He puts this figure on any loose circle. Then he chooses one of the remaining 15 figures and, in turn, gives it to his opponent. He puts his figure on any loose circle and so on in his turn.
+                                It is necessary to make a series of figures on a 4x4 square field with at least one common feature (horizontally, vertically or diagonally).
+                                It can be a series of light figures or from dark, from small or large,
+                                from figures with a notch or figures without it, from round or square. However, there can be more than one coinciding sign.
+                                A player can also form a series of 4 figures with more than one common sign.
+                                The three previous figures in the series do not have to be delivered by the same player.
+                                The party wins the one who first pointed to the series with a common sign, uttering the word "QUARTO".
+                                If the player does not notice the formed series with a common sign and gives the opponent the next figure,
+                                then the enemy immediately can point to this series by exclaiming "QUARTO" and, thus, winning the game.
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+</resources>

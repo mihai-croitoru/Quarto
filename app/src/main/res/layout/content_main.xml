@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:background="@drawable/boardwood"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            tools:context=".MainActivity">
+
+            <GridView
+                android:id="@+id/gridBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/board_2square"
+                android:gravity="top|center"
+                android:numColumns="4"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:paddingTop="8dp"></GridView>
+
+            <GridView
+                android:id="@+id/gridSet"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:layout_weight="2"
+                android:background="@drawable/wood_container_double"
+                android:gravity="center"
+                android:isScrollContainer="false"
+                android:numColumns="8"
+                android:orientation="horizontal"
+                android:overScrollMode="never"
+                android:padding="1dp"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:scrollX="1dp"
+                android:scrollY="1dp"
+                android:scrollbars="none"></GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            tools:context=".MainActivity">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="#66FF33"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/btnPass"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/instructions"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/choiceFigure"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instructionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/buttonRules"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+
+                android:text="@string/rules"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/popupButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Pop-Up"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addsBannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimaryDark"
+            tools:context=".MainActivity"
+            tools:ignore="DuplicateIds">
+
+            <TextView
+                android:id="@+id/addsBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Banner Ads !"
+                android:textAlignment="center"
+                android:textColor="#FF3300" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
