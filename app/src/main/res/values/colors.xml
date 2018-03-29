@@ -3,5 +3,11 @@
     <color name="colorPrimary">#FFFF66</color>
     <color name="colorPrimaryDark">#FF9900</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorAccentTorinoRed">#F2000D</color>
+    <color name="colorLavaRed">#FF3300</color>
+    <color name="colorAccentBlue">#0000FF</color>
+    <color name="colorAccentTeal">#008080</color>
+    <color name="colorAccentMidnightBlue">#191970</color>
+    <color name="colorAccentSeaGreen">#54ff9f</color>
 </resources>
 

@@ -3,36 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+
+
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+
+        <item android:title="Profile Options">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="History" />
+            </menu>
+        </item>
     </group>
 
-    <item android:title="Communicate">
-        <menu>
+    <group android:checkableBehavior="single">
+        <item android:title="Options and Rules">
+            <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_rules"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Game Rules" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_green_24dp"
+                android:title="Settings" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/nav_camera"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="Import" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Gallery" />
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Slideshow" />
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Tools" />
+            </menu>
+
+
+        </item>
+
+    </group>
+
+
 
 </menu>

@@ -12,8 +12,8 @@
     <string name="vinLine">Indicate a series of 4 similar in one feature figures</string>
     <string name="congratulations"> Congratulations you won !</string>
     <string name="pass">Pass the move</string>
-    <string name="player1">Player 1</string>
-    <string name="player2">Player 2</string>
+    <string name="player1">User </string>
+    <string name="player2">Guest</string>
     <string name="rules"> Rules </string>
     <string name="rules1">One</string>
     <string name="rules2">Two</string>
@@ -34,7 +34,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_subtitle">user.profile@email.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
 
