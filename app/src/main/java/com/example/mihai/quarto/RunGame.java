@@ -97,7 +97,7 @@ public class RunGame {
         Log.d(TAG, " ������ ������");
         if (logicData.isTrue(LogicData.passPart)
                 & logicData.isTrue(LogicData.choicePart)) { // pass
-            Log.d(TAG, " �������� ���");
+            Log.d(TAG, " Pass the move");
             logicData.setPartGame(LogicData.movePart);
             logicData.setPlayer((logicData.getPlayer() + 1) % 2); // nextPlayer
             return;
@@ -105,19 +105,19 @@ public class RunGame {
 
         if (logicData.isTrue(LogicData.movePart)
                 & logicData.isTrue(LogicData.choicePart)) {// win
-            Log.d(TAG, " ������");
+            Log.d(TAG, " Game Won");
             logicData.setPartGame(LogicData.winPart);
             return;
         }
         if (logicData.isTrue(LogicData.winPart)) { // return to game
-            Log.d(TAG, " ���������");
+            Log.d(TAG, " Raturn to game");
             logicData.setPartGame(LogicData.choicePart, LogicData.movePart);
             logicData.resetVin();
             return;
         }
 
         if (logicData.isTrue(LogicData.restartPart)) {// restart
-            Log.d(TAG, "�������");
+            Log.d(TAG, "Restart");
             logicData = new LogicData();
             setF = new SetFigure();
             board = new SetFigure();

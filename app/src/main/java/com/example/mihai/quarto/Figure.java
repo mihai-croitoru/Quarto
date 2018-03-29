@@ -1,10 +1,9 @@
 package com.example.mihai.quarto;
 
-
 import android.util.Log;
 
 /**
- * Figure.java This class figures which we play. Every numeral, in id binary
+ * Figure.java : This class is for getting the id's of the figures which we play. Every numeral, in id binary
  * representation, presents figure characteristic.
  *
  */

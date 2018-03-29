@@ -9,10 +9,14 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 /**
- * ImageAdapter.java Adapter images from DrawData to gridView in MainActyvity
+ *
+ *
+ * ImageAdapter.java : This class is used as an Adapter of images from DrawData.class to gridView in MainActyvity.class
  * according to RunGame board and set
  *
+ *
  */
+
 public class ImageAdapter extends BaseAdapter {
     private static final String TAG = "ImageAdapterLogs";
     private Context mContext;
@@ -57,12 +61,13 @@ public class ImageAdapter extends BaseAdapter {
     // create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
-        if (convertView == null) { // if it's not recycled, initialize some
-            // attributes
+        if (convertView == null) {
+                        // if it's not recycled, initialize some
+                        // attributes
             imageView = new ImageView(mContext);
-            // imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
-            // imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            // imageView.setPadding(5, 5, 5, 5);
+                        // imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+                        // imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                        // imageView.setPadding(5, 5, 5, 5);
         } else {
             imageView = (ImageView) convertView;
         }
@@ -74,11 +79,11 @@ public class ImageAdapter extends BaseAdapter {
                     if (LogicData.vin[0] == position | LogicData.vin[1] == position
                             | LogicData.vin[2] == position
                             | LogicData.vin[3] == position) {
-                        // Log.d (TAG,
-                        // "image adapter setImageResource(DrawData.visible[RunGame.board.getId(position "
-                        // +position+" ) "+RunGame.board
-                        // .getId(position)+ "] = " +
-                        // DrawData.visible[RunGame.board.getId(position)] );
+                            // Log.d (TAG,
+                            // "image adapter setImageResource(DrawData.visible[RunGame.board.getId(position "
+                            // +position+" ) "+RunGame.board
+                            // .getId(position)+ "] = " +
+                            // DrawData.visible[RunGame.board.getId(position)] );
 
                         imageView.setImageResource(DrawData.visible[RunGame.board
                                 .getId(position)]);
@@ -109,7 +114,6 @@ public class ImageAdapter extends BaseAdapter {
 
                 if (LogicData.searchFigurePosition != -1
                         & LogicData.searchFigurePosition != position)
-
                 {
                     // Log.d (TAG,
                     // "image adapter  setImageResource(DrawData.unVisible[RunGame.setF.getId(position "

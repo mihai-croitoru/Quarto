@@ -9,7 +9,7 @@ import android.util.Log;
 
 
 /**
- * LogicData.java all game data placed in this class.
+ * LogicData.java All game data placed in this class.
  */
 
 public class LogicData {

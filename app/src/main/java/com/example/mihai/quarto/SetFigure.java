@@ -5,8 +5,7 @@ package com.example.mihai.quarto;
 import android.util.Log;
 
 /**
- * SetFigure.java full figure set and clean set for the game pick up and put
- * figures
+ * SetFigure.java full figure set and clean set for the game pick up and put/place figures
  */
 
 public class SetFigure {
