@@ -21,13 +21,14 @@ public class LogicData {
     public static int vin[] = new int[4];
 
     LogicData() {
-        Log.d(TAG, "�����������");
+        Log.d(TAG, "Logic Data");
         passPart = new PartGame();
         choicePart = new PartGame();
         movePart = new PartGame();
         winPart = new PartGame();
         restartPart = new PartGame();
         setPartGame(choicePart);
+
     }
 
     public int getToDoText() {
@@ -42,6 +43,7 @@ public class LogicData {
             return R.string.btnVin;
 
         if (isTrue(winPart))
+
             return R.string.btnReturn;
 
         if (isTrue(restartPart))

@@ -2,6 +2,7 @@ package com.example.mihai.quarto;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -20,19 +21,13 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//public class MainActivity extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//    }
-//}
+
 /**
  * MainActivity.java game activity
  *
@@ -47,6 +42,7 @@ public class MainActivity extends Activity implements OnClickListener,
     Button btn;
     Button btnRules;
     Button PopUpButton;
+    Button btnWin;
     public static RunGame run;
     ImageAdapter boardAdapter = new ImageAdapter(this, R.id.gridBoard);
     ImageAdapter setAdapter = new ImageAdapter(this, R.id.gridSet);
@@ -59,25 +55,21 @@ public class MainActivity extends Activity implements OnClickListener,
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-       //
         boardGrid = (GridView) findViewById(R.id.gridBoard);
         setGrid = (GridView) findViewById(R.id.gridSet);
         btn = (Button) findViewById(R.id.button1);
         btnRules = (Button) findViewById(R.id.buttonRules);
-        PopUpButton = findViewById(R.id.popupButton);
+        btnWin = (Button) findViewById(R.id.winButton);
         text = (TextView) findViewById(R.id.instructions);
+
+        //PopUpButton = findViewById(R.id.popupButton);
+
+        //  LinearLayout r1 = findViewById(R.id.LinearLayoutWin);
+        // final TextView tvWin = (TextView) findViewById(R.id.textWin);
+
         //--pasted
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -97,39 +89,50 @@ public class MainActivity extends Activity implements OnClickListener,
         btnRules.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                   startActivity(new Intent(MainActivity.this, PopRules.class));
-               // PopupWindow popupWindow = new PopupWindow(MainActivity.this, (AttributeSet) btnRules);
-            //  View view1 = findViewById(R.id.textRules);
-            //    popupWindow.setContentView(view1);
-//                Intent intent;
-//                intent = new Intent(RulesActivity.class, this);
-//                startActivity(intent);
-
+                startActivity(new Intent(MainActivity.this, PopRules.class));
+                //PopupWindow popupWindow = new PopupWindow(MainActivity.this, (AttributeSet) btnRules);
+                //View view1 = findViewById(R.id.textRules);
+                //popupWindow.setContentView(view1);
+                //Intent intent;
+                //intent = new Intent(RulesActivity.class, this);
+                //startActivity(intent);
                 //startActivity(new Intent(RulesActivity.class, (MainActivity.this));
             }
         });
-        PopUpButton.setOnClickListener( new View.OnClickListener(){
+
+        btnWin.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                PopupMenu popup= new PopupMenu(MainActivity.this,PopUpButton);
-
-                popup.getMenuInflater().inflate(R.menu.popup_menu_rules,popup.getMenu());
-
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    @Override
-                    public boolean onMenuItemClick(MenuItem menuItem) {
-                        Toast.makeText(MainActivity.this, "Click Item: " + menuItem.getTitle(),Toast.LENGTH_LONG).show();
-                        return true;
-                    }
-                });
-                popup.show();
-
+                startActivity(new Intent( MainActivity.this, PopWin.class));
+               // tvWin.setBackgroundColor(Color.parseColor("#55FF0000"));
             }
         });
-        Log.d(TAG, "��� �������");
+
+//        PopUpButton.setOnClickListener( new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                PopupMenu popup= new PopupMenu(MainActivity.this,PopUpButton);
+//
+//                popup.getMenuInflater().inflate(R.menu.popup_menu_rules,popup.getMenu());
+//
+//                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+//                    @Override
+//                    public boolean onMenuItemClick(MenuItem menuItem) {
+//                        Toast.makeText(MainActivity.this, "Click Item: " + menuItem.getTitle(),Toast.LENGTH_LONG).show();
+//                        return true;
+//                    }
+//                });
+//                popup.show();
+//
+//            }
+//        });
+      //  Log.d(TAG, "��� �������");
         f5();
-        Log.d(TAG, "����������");
+      //  Log.d(TAG, "����������");
     }
+
+
+
 
     public void start() {
         Log.d(TAG, "start");
@@ -188,8 +191,6 @@ public class MainActivity extends Activity implements OnClickListener,
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    
-
 
     @Override
     public void onBackPressed() {
@@ -230,14 +231,12 @@ public class MainActivity extends Activity implements OnClickListener,
 
         }
 //        if (R.id.buttonRules == v.getId()){
-//            startActivity(new Intent(RulesActivity.class, (MainActivity.this));
-//
+//        startActivity(new Intent(RulesActivity.class, (MainActivity.this));
 //        }
-
 
     }
 
-    //the onOclick for rules page!
+    //the onOnClick for rules page!
     public void yourMethodName(View v){
         startActivity(new Intent(MainActivity.this, RulesActivity.class));
     }

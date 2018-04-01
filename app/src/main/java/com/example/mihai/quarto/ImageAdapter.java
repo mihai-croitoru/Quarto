@@ -2,7 +2,11 @@ package com.example.mihai.quarto;
 
 
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -20,6 +24,7 @@ import android.widget.ImageView;
 public class ImageAdapter extends BaseAdapter {
     private static final String TAG = "ImageAdapterLogs";
     private Context mContext;
+
     int idn;
 
     public ImageAdapter(Context c, int grid) {
@@ -59,6 +64,8 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     // create a new ImageView for each item referenced by the Adapter
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {
@@ -79,6 +86,7 @@ public class ImageAdapter extends BaseAdapter {
                     if (LogicData.vin[0] == position | LogicData.vin[1] == position
                             | LogicData.vin[2] == position
                             | LogicData.vin[3] == position) {
+
                             // Log.d (TAG,
                             // "image adapter setImageResource(DrawData.visible[RunGame.board.getId(position "
                             // +position+" ) "+RunGame.board

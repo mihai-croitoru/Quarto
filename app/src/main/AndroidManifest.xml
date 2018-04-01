@@ -23,6 +23,10 @@
         <activity
             android:name=".PopRules"
             android:theme="@style/AppTheme.CustomTheme" />
+
+        <activity
+            android:name=".PopWin"
+            android:theme="@style/AppTheme.CustomTheme" />
         <!--<activity-->
             <!--android:name=".Main2Activity"-->
             <!--android:label="@string/title_activity_main2"-->

@@ -18,13 +18,22 @@
     <string name="rules1">One</string>
     <string name="rules2">Two</string>
     <string name="rules3">Three</string>
-    <string name="quartoRules">
-                                Players in any convenient way determine who will make the first move. The player who walks first selects any of the 16 pieces and submits it to his opponent.
-                                He puts this figure on any loose circle. Then he chooses one of the remaining 15 figures and, in turn, gives it to his opponent. He puts his figure on any loose circle and so on in his turn.
+    <string name="quartoRulesIntro"> HOW TO PLAY? </string>
+
+    <string name="quartoRules1row">Players in any convenient way determine who will make the first move. The player who walks first selects any of the 16 pieces and submits it to his opponent.</string>
+    <string name="quartoRules2row"> He puts this figure on any loose circle. </string>
+    <string name="quartoRules3row"> Then he chooses one of the remaining 15 figures and, in turn, gives it to his opponent. </string>
+    <string name="quartoRules4row"> The opponent then puts his figure on any loose circle and so on in his turn. </string>
+    <string name="quartoRules5row">  </string>
+    <string name="quartoRules6row">  </string>
+
+    <string name="quartoRules2">
+
                                 It is necessary to make a series of figures on a 4x4 square field with at least one common feature (horizontally, vertically or diagonally).
-                                It can be a series of light figures or from dark, from small or large,
-                                from figures with a notch or figures without it, from round or square. However, there can be more than one coinciding sign.
-                                A player can also form a series of 4 figures with more than one common sign.
+                                It can be a series of light or dark figures, from small or large, from solid or hollow figures, or from round or square figures. </string>
+
+    <string name="quartoRules3">
+                                However, there can be more than one coinciding sign. So a player can also form a series of 4 figures with more than one common sign.
                                 The three previous figures in the series do not have to be delivered by the same player.
                                 The party wins the one who first pointed to the series with a common sign, uttering the word "QUARTO".
                                 If the player does not notice the formed series with a common sign and gives the opponent the next figure,
@@ -36,6 +45,7 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">user.profile@email.com</string>
     <string name="nav_header_desc">Navigation header</string>
+    <string name="quarto">QUARTO</string>
 
 
 </resources>

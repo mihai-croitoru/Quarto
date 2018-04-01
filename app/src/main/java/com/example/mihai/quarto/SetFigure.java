@@ -19,26 +19,26 @@ public class SetFigure {
         set = new Figure[16];
     }
 
-    public int length() { // ImageAdapter need
+    public int length() { // used for the ImageAdapter class
         // Log.d (TAG, "length" );
         return set.length;
     }
 
     public int getId(int p) {// ImageAdapter need
-        // Log.d (TAG, "getId" );
+         Log.d (TAG, "getId" );
         return set[p].getId();
     }
 
     public void createSetFigure() { // start set for the game
-        // Log.d (TAG, "createSetFigure" );
+         Log.d (TAG, "createSetFigure" );
         for (int i = 0; i <= 15; i++) {
             set[i] = new Figure(i);
         }
         ;
     }
 
-    public void cleanSet() { // empty set
-        // Log.d (TAG, "cleanSet" );
+    public void cleanSet() { // clean/empty set
+         Log.d (TAG, "cleanSet" );
         for (int i = 0; i <= 15; i++) {
             set[i] = nll;
         }

@@ -14,7 +14,7 @@ public class DrawData {
     static int unVisible[] = new int[17];
 
     public DrawData() {
-        // Log.d (TAG, " Message :������������� ������� ��������");
+        // Log.d (TAG, " Message :");
 
         for (int i = 0, fig = R.drawable.fig0000, unfig = R.drawable.unfig0000; i <= 15; i++, fig++, unfig++) {
             visible[i] = fig;       //figures starting with "fig" are usable/visible/accessible

@@ -1,36 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@drawable/lined_paper_by_ll_st"
         tools:context=".PopRules">
 
-        <ScrollView
-            android:id="@+id/scrollView1"
+        <TextView
+            android:id="@+id/textRules1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/quartoRules1row"
+            tools:ignore="Suspicious0dp" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text="Image" />
+        <TextView
+            android:id="@+id/textRules2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/quartoRules2row"
+            tools:ignore="Suspicious0dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text="Image" />
+
+
+        <TextView
+            android:id="@+id/textRules3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quartoRules3row"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text=" another Image"
+            />
+
 
             <TextView
-                android:id="@+id/textRules"
+                android:id="@+id/textRules4"
                 android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:textColor="@color/colorAccentTeal"
-                android:textSize="21dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccentTorinoRed"
+                android:textSize="21sp"
                 android:textAlignment="center"
                 android:textStyle="italic"
-                android:text="@string/quartoRules" />
+                android:text="@string/quartoRules4row"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text=" meybe more Images"
+            />
 
-        </ScrollView>
+        <!--<TextView-->
+            <!--android:id="@+id/textRules5"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorAccentTorinoRed"-->
+            <!--android:textSize="21sp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="italic"-->
+            <!--android:text="@string/quartoRules5row"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text=" meybe more Images"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textRules6"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/colorAccentTorinoRed"-->
+            <!--android:textSize="21sp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="italic"-->
+            <!--android:text="@string/quartoRules6row"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text=" meybe more Images"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/textRules7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/quartoRules2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text=" meybe more Images"
+            />
+
+        <TextView
+            android:id="@+id/textRules8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/quartoRules3"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text=" meybe more Images"
+            />
 
     </LinearLayout>
+
+</ScrollView>
 
 </android.support.constraint.ConstraintLayout>
 
