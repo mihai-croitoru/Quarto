@@ -33,7 +33,7 @@ import android.widget.Toast;
  *
  */
 public class MainActivity extends Activity implements OnClickListener,
-        OnItemClickListener, NavigationView.OnNavigationItemSelectedListener {
+        OnItemClickListener, NavigationView.OnNavigationItemSelectedListener, PopupDelegate {
 
     private static final String TAG = "MainActivityLogs";
     public static LogicData logicData;
@@ -135,7 +135,7 @@ public class MainActivity extends Activity implements OnClickListener,
 
     public void start() {
         Log.d(TAG, "start");
-        run = new RunGame();
+        run = new RunGame(this);
     }
 
     @Override
@@ -188,7 +188,6 @@ public class MainActivity extends Activity implements OnClickListener,
         }else if (id == R.id.nav_pop_win) {
             startActivity(new Intent( MainActivity.this, PopWin.class));
         }
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -266,5 +265,10 @@ public class MainActivity extends Activity implements OnClickListener,
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
         
+    }
+
+    @Override
+    public void showWinPopUp() {
+        startActivity(new Intent( MainActivity.this, PopWin.class));
     }
 }

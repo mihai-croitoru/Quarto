@@ -1,6 +1,7 @@
 package com.example.mihai.quarto;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import static android.support.v4.content.ContextCompat.startActivity;
  * @author gregory implemented all possible actions in the game:
  */
 
-public class RunGame {
+public class RunGame  {
     private static final String TAG = "RunGamesLogs";
 
     public LogicData logicData;
@@ -20,12 +21,14 @@ public class RunGame {
     public static SetFigure setF;
     public static SetFigure board;
     public static PopWin popWin;
+    private PopupDelegate delegate;
 
-    public RunGame() {
+    public RunGame( PopupDelegate delegate) {
         logicData = new LogicData();
         drawData = new DrawData();
         popWin = new PopWin();
         setF = new SetFigure();
+        this.delegate = delegate;
         board = new SetFigure();
         setF.createSetFigure();
         board.cleanSet();
@@ -87,6 +90,8 @@ public class RunGame {
         if (logicData.isTrue(LogicData.winPart)) {
             setWin(position);
             if (isWin()) {
+
+                delegate.showWinPopUp();
                 logicData.setPartGame(LogicData.restartPart);
                 return;
             }
@@ -158,27 +163,27 @@ public class RunGame {
 
 
 
-    private boolean isVinLine() {// check: is win set a line ?
+    private boolean isVinLine() {// check if it is a straight line
         Log.d(TAG, "setVinLine");
-        int a = (logicData.getWin(3) - logicData.getWin(2));
+        int a = (logicData.getWin(3) - logicData.getWin(2)); // position difference between 3 and 2 element
         if (a == (logicData.getWin(2) - logicData.getWin(1))
-                & a == (logicData.getWin(1) - logicData.getWin(0)))
+                & a == (logicData.getWin(1) - logicData.getWin(0)))  // check if selected elements are in the same line
             switch (a) {
-                case 4:
+                case 4:  // vertical line
                     return true;
-                case 1:
+                case 1: // horizontal line
                     if (logicData.getWin(0) % 4 == 0) {
                         return true;
                     } else {
                         return false;
                     }
-                case 5:
+                case 5: // primary diagonal line
                     if (logicData.getWin(0) == 0) {
                         return true;
                     } else {
                         return false;
                     }
-                case 3:
+                case 3: // secondary diagonal line
                     if (logicData.getWin(0) == 3) {
                         return true;
                     } else {
@@ -188,7 +193,7 @@ public class RunGame {
         return false;
     }
 
-    private boolean isVictory() { // check: selected figures overall parameter
+    private boolean isVictory() { // check if the items are victorious
         Log.d(TAG, "setVictory");
         int p1 = setF.getId(logicData.getWin(0));
         int p2 = setF.getId(logicData.getWin(1));
