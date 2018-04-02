@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text="Image" />
+            android:text="Instructions Image 1" />
         <TextView
             android:id="@+id/textRules2"
             android:layout_width="fill_parent"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text="Image" />
+            android:text="Instructions Image 2" />
 
 
         <TextView
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text=" another Image"
+            android:text="Instructions Image 3"
             />
 
 
@@ -87,26 +87,26 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text=" meybe more Images"
+            android:text="Instructions Image 4"
             />
 
-        <!--<TextView-->
-            <!--android:id="@+id/textRules5"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textColor="@color/colorAccentTorinoRed"-->
-            <!--android:textSize="21sp"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textStyle="italic"-->
-            <!--android:text="@string/quartoRules5row"-->
-            <!--/>-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="@color/colorAccentSeaGreen"-->
-            <!--android:textAlignment="center"-->
-            <!--android:text=" meybe more Images"-->
-            <!--/>-->
+        <TextView
+            android:id="@+id/textRules5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccentTorinoRed"
+            android:textSize="21sp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="@string/quartoRules5row"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccentSeaGreen"
+            android:textAlignment="center"
+            android:text="Instructions Image 5"
+            />
 
         <!--<TextView-->
             <!--android:id="@+id/textRules6"-->
@@ -141,7 +141,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text=" meybe more Images"
+            android:text="Instructions Image 6"
             />
 
         <TextView
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccentSeaGreen"
             android:textAlignment="center"
-            android:text=" meybe more Images"
+            android:text="Instructions Image 7"
             />
 
     </LinearLayout>

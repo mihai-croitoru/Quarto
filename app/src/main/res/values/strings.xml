@@ -20,11 +20,12 @@
     <string name="rules3">Three</string>
     <string name="quartoRulesIntro"> HOW TO PLAY? </string>
 
-    <string name="quartoRules1row">Players in any convenient way determine who will make the first move. The player who walks first selects any of the 16 pieces and submits it to his opponent.</string>
-    <string name="quartoRules2row"> He puts this figure on any loose circle. </string>
-    <string name="quartoRules3row"> Then he chooses one of the remaining 15 figures and, in turn, gives it to his opponent. </string>
-    <string name="quartoRules4row"> The opponent then puts his figure on any loose circle and so on in his turn. </string>
-    <string name="quartoRules5row">  </string>
+    <string name="quartoRules1row">Players in any convenient way determine who will make the first move.</string>
+    <string name="quartoRules2row">  The player who walks first selects any of the 16 pieces and submits it to his opponent. </string>
+    <string name="quartoRules3row"> He puts this figure on any loose circle. </string>
+    <string name="quartoRules4row"> Then he chooses one of the remaining 15 figures and, in turn, gives it to his opponent. </string>
+    <string name="quartoRules5row"> The opponent then puts his figure on any loose circle and so on in his turn. </string>
+
     <string name="quartoRules6row">  </string>
 
     <string name="quartoRules2">

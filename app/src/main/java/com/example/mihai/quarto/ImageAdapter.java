@@ -10,6 +10,7 @@ import android.support.annotation.RequiresApi;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 
 /**
@@ -72,9 +73,9 @@ public class ImageAdapter extends BaseAdapter {
                         // if it's not recycled, initialize some
                         // attributes
             imageView = new ImageView(mContext);
-                        // imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
-                        // imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                        // imageView.setPadding(5, 5, 5, 5);
+                         //imageView.setLayoutParams(new GridView.LayoutParams(85, 85));
+                      //   imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                      //   imageView.setPadding(5, 5, 5, 5);
         } else {
             imageView = (ImageView) convertView;
         }

@@ -10,13 +10,18 @@
         <item android:title="Profile Options">
             <menu>
                 <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_account_circle_red_24dp"
                     android:title="Profile" />
                 <item
-                    android:id="@+id/nav_send"
-                    android:icon="@drawable/ic_menu_send"
+                    android:id="@+id/nav_history"
+                    android:icon="@drawable/ic_history_red_24dp"
                     android:title="History" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="History" />
+
             </menu>
         </item>
     </group>
@@ -28,6 +33,11 @@
                 android:id="@+id/nav_rules"
                 android:icon="@drawable/ic_info_black_24dp"
                 android:title="Game Rules" />
+
+            <item
+                android:id="@+id/nav_pop_win"
+                android:icon="@drawable/ic_info_black_24dp"
+                 android:title="Pop-Up Win Message" />
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings_green_24dp"
@@ -36,32 +46,32 @@
         </item>
     </group>
 
-    <group android:checkableBehavior="single">
-        <item android:title="Others">
-            <menu>
-                <item
-                    android:id="@+id/nav_camera"
-                    android:icon="@drawable/ic_menu_camera"
-                    android:title="Import" />
-                <item
-                    android:id="@+id/nav_gallery"
-                    android:icon="@drawable/ic_menu_gallery"
-                    android:title="Gallery" />
-                <item
-                    android:id="@+id/nav_slideshow"
-                    android:icon="@drawable/ic_menu_slideshow"
-                    android:title="Slideshow" />
-                <item
-                    android:id="@+id/nav_manage"
-                    android:icon="@drawable/ic_menu_manage"
-                    android:title="Tools" />
-            </menu>
-
-
-        </item>
-
-    </group>
-
-
-
 </menu>
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item android:title="Others">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_camera"-->
+                    <!--android:icon="@drawable/ic_menu_camera"-->
+                    <!--android:title="Import" />-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_gallery"-->
+                    <!--android:icon="@drawable/ic_menu_gallery"-->
+                    <!--android:title="Gallery" />-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_slideshow"-->
+                    <!--android:icon="@drawable/ic_menu_slideshow"-->
+                    <!--android:title="Slideshow" />-->
+                <!--<item-->
+                    <!--android:id="@+id/nav_manage"-->
+                    <!--android:icon="@drawable/ic_menu_manage"-->
+                    <!--android:title="Tools" />-->
+            <!--</menu>-->
+
+
+        <!--</item>-->
+
+    <!--</group>-->
+
+

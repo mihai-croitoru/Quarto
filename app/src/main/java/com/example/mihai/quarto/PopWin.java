@@ -18,7 +18,7 @@ public class PopWin  extends Activity {
         int width = displayMetrics.widthPixels;
         int height = displayMetrics.heightPixels;
 
-        getWindow().setLayout((int) (width*.50) ,(int) (height*.10));
+        getWindow().setLayout((int) (width*.75) ,(int) (height*.15));
 
 
 

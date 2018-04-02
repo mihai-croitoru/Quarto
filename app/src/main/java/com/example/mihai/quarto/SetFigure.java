@@ -20,7 +20,7 @@ public class SetFigure {
     }
 
     public int length() { // used for the ImageAdapter class
-        // Log.d (TAG, "length" );
+        // Log.d (TAG, " set length" );
         return set.length;
     }
 

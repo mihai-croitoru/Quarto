@@ -36,6 +36,7 @@ public class MainActivity extends Activity implements OnClickListener,
         OnItemClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     private static final String TAG = "MainActivityLogs";
+    public static LogicData logicData;
     // int tempText;
     TextView text;
     GridView setGrid, boardGrid;
@@ -58,12 +59,10 @@ public class MainActivity extends Activity implements OnClickListener,
         boardGrid = (GridView) findViewById(R.id.gridBoard);
         setGrid = (GridView) findViewById(R.id.gridSet);
         btn = (Button) findViewById(R.id.button1);
-        btnRules = (Button) findViewById(R.id.buttonRules);
-        btnWin = (Button) findViewById(R.id.winButton);
+      //  btnRules = (Button) findViewById(R.id.buttonRules);
+     //   btnWin = (Button) findViewById(R.id.winButton);
         text = (TextView) findViewById(R.id.instructions);
-
         //PopUpButton = findViewById(R.id.popupButton);
-
         //  LinearLayout r1 = findViewById(R.id.LinearLayoutWin);
         // final TextView tvWin = (TextView) findViewById(R.id.textWin);
 
@@ -86,27 +85,30 @@ public class MainActivity extends Activity implements OnClickListener,
         boardGrid.setOnItemClickListener(this);
         setGrid.setOnItemClickListener(this);
         btn.setOnClickListener(this);
-        btnRules.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, PopRules.class));
-                //PopupWindow popupWindow = new PopupWindow(MainActivity.this, (AttributeSet) btnRules);
-                //View view1 = findViewById(R.id.textRules);
-                //popupWindow.setContentView(view1);
-                //Intent intent;
-                //intent = new Intent(RulesActivity.class, this);
-                //startActivity(intent);
-                //startActivity(new Intent(RulesActivity.class, (MainActivity.this));
-            }
-        });
+//        btnRules.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, PopRules.class));
+//                //PopupWindow popupWindow = new PopupWindow(MainActivity.this, (AttributeSet) btnRules);
+//                //View view1 = findViewById(R.id.textRules);
+//                //popupWindow.setContentView(view1);
+//                //Intent intent;
+//                //intent = new Intent(RulesActivity.class, this);
+//                //startActivity(intent);
+//                //startActivity(new Intent(RulesActivity.class, (MainActivity.this));
+//            }
+//        });
 
-        btnWin.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent( MainActivity.this, PopWin.class));
-               // tvWin.setBackgroundColor(Color.parseColor("#55FF0000"));
-            }
-        });
+//        btnWin.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent( MainActivity.this, PopWin.class));
+//               // tvWin.setBackgroundColor(Color.parseColor("#55FF0000"));
+//            }
+//        });
+
+
+
 
 //        PopUpButton.setOnClickListener( new View.OnClickListener(){
 //            @Override
@@ -173,19 +175,23 @@ public class MainActivity extends Activity implements OnClickListener,
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_profile) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_history) {
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_rules) {
+            startActivity(new Intent(MainActivity.this, PopRules.class));
 
+
+        } else if (id == R.id.nav_settings) {
+
+        }else if (id == R.id.nav_pop_win) {
+            startActivity(new Intent( MainActivity.this, PopWin.class));
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

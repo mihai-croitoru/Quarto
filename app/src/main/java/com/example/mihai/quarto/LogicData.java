@@ -121,20 +121,20 @@ public class LogicData {
         searchFigurePosition = -1;
     }
 
-    void setVin(int i, int p) {
+    void setWin(int i, int p) {
         vin[i] = p;
     }
 
-    int getVin(int i) {
+    int getWin(int i) {
         return vin[i];
     }
 
-    boolean sortVin() {
+    boolean sortWin() {
         Arrays.sort(vin);
         return true;
     }
 
-    void resetVin() {
+    void resetWin() {
         vin[0] = -1;
         vin[1] = -1;
         vin[2] = -1;

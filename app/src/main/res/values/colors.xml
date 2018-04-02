@@ -9,5 +9,6 @@
     <color name="colorAccentTeal">#008080</color>
     <color name="colorAccentMidnightBlue">#191970</color>
     <color name="colorAccentSeaGreen">#54ff9f</color>
+    <color name="trans">#00000000</color>
 </resources>
 

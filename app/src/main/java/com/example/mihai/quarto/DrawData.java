@@ -3,7 +3,7 @@ package com.example.mihai.quarto;
 import android.util.Log;
 /**
  *
- * DrawData.java figures images pictures name must comply ordinal value in array
+ * DrawData.java figures/images/pictures - name must comply ordinal value in array
  * each figure characteristic represented by 0 or 1 in binary code pictures number
  */
 
