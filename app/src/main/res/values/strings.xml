@@ -13,7 +13,7 @@
     <string name="congratulations"> Congratulations you won !</string>
     <string name="pass">Pass the move</string>
     <string name="player1">User </string>
-    <string name="player2">Guest</string>
+    <string name="player2">Guest </string>
     <string name="rules"> Rules </string>
     <string name="rules1">One</string>
     <string name="rules2">Two</string>
@@ -47,6 +47,10 @@
     <string name="nav_header_subtitle">user.profile@email.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="quarto">QUARTO</string>
+    <string name="set_players_name">Set Players name</string>
+    <string name="player_one_name">Player One Name</string>
+    <string name="hint">hint</string>
+    <string name="player_2_name">Player 2 Name</string>
 
 
 </resources>

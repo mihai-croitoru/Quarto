@@ -107,9 +107,6 @@ public class MainActivity extends Activity implements OnClickListener,
 //            }
 //        });
 
-
-
-
 //        PopUpButton.setOnClickListener( new View.OnClickListener(){
 //            @Override
 //            public void onClick(View view) {
@@ -186,6 +183,7 @@ public class MainActivity extends Activity implements OnClickListener,
 
 
         } else if (id == R.id.nav_settings) {
+            startActivity(new Intent(MainActivity.this, Activity_options.class));
 
         }else if (id == R.id.nav_pop_win) {
             startActivity(new Intent( MainActivity.this, PopWin.class));

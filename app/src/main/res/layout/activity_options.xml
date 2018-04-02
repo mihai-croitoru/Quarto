@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:theme="@style/AppTheme.TransparentTheme"
+    tools:context=".Activity_options">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayoutOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:gravity="top|center_horizontal|center"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.TransparentTheme"
+        tools:context=".Activity_options"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <TextView
+            android:id="@+id/textViewSetPlayerNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:gravity="center"
+            android:text="@string/set_players_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLavaRed"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:fontFamily="sans-serif"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textImputLayoutUserNames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textImputEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/player_one_name" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textImputLayoutUserNames2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textImputEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/player_one_name" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Submit >" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
