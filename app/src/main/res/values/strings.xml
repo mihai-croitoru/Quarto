@@ -51,6 +51,10 @@
     <string name="player_one_name">Player One Name</string>
     <string name="hint">hint</string>
     <string name="player_2_name">Player 2 Name</string>
+    <string name="submit"><![CDATA[Submit >]]></string>
+
+    <string name="select_game_difficulty">Select Game Difficulty</string>
+    <string name="banner_ads">Banner Ads !</string>
 
 
 </resources>

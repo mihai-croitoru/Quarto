@@ -22,9 +22,8 @@
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="414dp"
             android:baselineAligned="false"
             android:orientation="vertical"
             android:overScrollMode="never"
@@ -46,19 +45,18 @@
 
             <GridView
                 android:id="@+id/gridSet"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="1dp"
-                android:layout_weight="3"
+                android:layout_margin="1dp"
+                android:layout_weight="4"
                 android:background="@drawable/wood_container"
                 android:gravity="top|center"
                 android:isScrollContainer="false"
                 android:numColumns="8"
                 android:orientation="horizontal"
                 android:overScrollMode="never"
-                android:paddingBottom="10dp"
+                android:padding="1dp"
                 android:scaleX="1"
                 android:scaleY="1"
                 android:scrollX="0dp"
@@ -68,7 +66,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="120dip"
+            android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:background="@color/colorAccent"
             tools:context=".MainActivity">
@@ -80,23 +78,41 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="4dp"
-                android:layout_weight="1"
                 android:background="#66FF33"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/btnPass"
                 android:textColor="@color/colorAccent"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/instructions"
-                android:layout_width="236dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="3"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/choiceFigure"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
 
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addsBannerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimaryDark"
+            tools:context=".MainActivity"
+            tools:ignore="DuplicateIds">
+
+            <TextView
+                android:id="@+id/addsBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/banner_ads"
+                android:textAlignment="center"
+                android:textColor="#FF3300" />
 
         </LinearLayout>
 
@@ -138,26 +154,6 @@
                 <!--android:textStyle="bold" />-->
 
         <!--</LinearLayout>-->
-
-        <LinearLayout
-            android:id="@+id/addsBannerLayout"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_margin="2dp"
-            android:background="@color/colorPrimaryDark"
-            tools:context=".MainActivity"
-            tools:ignore="DuplicateIds">
-
-            <TextView
-                android:id="@+id/addsBanner"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Banner Ads !"
-                android:textAlignment="center"
-                android:textColor="#FF3300" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
