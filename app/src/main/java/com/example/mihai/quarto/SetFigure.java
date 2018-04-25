@@ -2,7 +2,7 @@ package com.example.mihai.quarto;
 
 
 
-import android.util.Log;
+        import android.util.Log;
 
 /**
  * SetFigure.java full figure set and clean set for the game pick up and put/place figures
@@ -25,12 +25,12 @@ public class SetFigure {
     }
 
     public int getId(int p) {// ImageAdapter need
-         Log.d (TAG, "getId" );
+        Log.d (TAG, "getId" );
         return set[p].getId();
     }
 
     public void createSetFigure() { // start set for the game
-         Log.d (TAG, "createSetFigure" );
+        Log.d (TAG, "createSetFigure" );
         for (int i = 0; i <= 15; i++) {
             set[i] = new Figure(i);
         }
@@ -38,7 +38,7 @@ public class SetFigure {
     }
 
     public void cleanSet() { // clean/empty set
-         Log.d (TAG, "cleanSet" );
+        Log.d (TAG, "cleanSet" );
         for (int i = 0; i <= 15; i++) {
             set[i] = nll;
         }

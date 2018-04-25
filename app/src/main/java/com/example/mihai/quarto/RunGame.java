@@ -10,7 +10,7 @@ import static android.support.v4.content.ContextCompat.startActivity;
 
 /**
  *
- * @author gregory implemented all possible actions in the game:
+ * @author  implemented all possible actions in the game:
  */
 
 public class RunGame  {

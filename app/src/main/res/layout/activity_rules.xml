@@ -28,12 +28,12 @@
             android:text="@string/quartoRules1row"
             tools:ignore="Suspicious0dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 1" />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 1" />-->
         <TextView
             android:id="@+id/textRules2"
             android:layout_width="fill_parent"
@@ -45,12 +45,12 @@
             android:text="@string/quartoRules2row"
             tools:ignore="Suspicious0dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 2" />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 2" />-->
 
 
         <TextView
@@ -63,13 +63,13 @@
             android:textSize="21sp"
             android:textStyle="italic" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 3"
-            />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 3"-->
+            <!--/>-->
 
 
             <TextView
@@ -82,13 +82,13 @@
                 android:textStyle="italic"
                 android:text="@string/quartoRules4row"
                 />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 4"
-            />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 4"-->
+            <!--/>-->
 
         <TextView
             android:id="@+id/textRules5"
@@ -100,13 +100,13 @@
             android:textStyle="italic"
             android:text="@string/quartoRules5row"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 5"
-            />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 5"-->
+            <!--/>-->
 
         <!--<TextView-->
             <!--android:id="@+id/textRules6"-->
@@ -136,13 +136,13 @@
             android:textStyle="italic"
             android:text="@string/quartoRules2"
             />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccentSeaGreen"
-            android:textAlignment="center"
-            android:text="Instructions Image 6"
-            />
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorAccentSeaGreen"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Instructions Image 6"-->
+            <!--/>-->
 
         <TextView
             android:id="@+id/textRules8"
