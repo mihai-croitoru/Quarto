@@ -21,17 +21,26 @@ public class RunGame  {
     public static SetFigure setF;
     public static SetFigure board;
     public static PopWin popWin;
+   // public static StartNewMPgame newMPgame;
     private PopupDelegate delegate;
+    private NewGameDelegate delegate2;
 
-    public RunGame( PopupDelegate delegate) {
+
+    public RunGame(PopupDelegate delegate) {
         logicData = new LogicData();
         drawData = new DrawData();
         popWin = new PopWin();
+      //  newMPgame = new StartNewMPgame();
         setF = new SetFigure();
         this.delegate = delegate;
+   //     this.delegate2 = delegate2;
         board = new SetFigure();
         setF.createSetFigure();
         board.cleanSet();
+    }
+
+    public RunGame() {
+
     }
 
     public void setClick(int position) {
@@ -151,6 +160,7 @@ public class RunGame  {
     }
 
 
+
     private boolean isWin() {// check win set
         Log.d(TAG, "isWin");
         if (logicData.getWin(0) != -1 && logicData.getWin(1) != -1
@@ -205,5 +215,17 @@ public class RunGame  {
         else
             return true;
     }
+
+    public void restartGame(){
+        Log.d(TAG, "Restarting Game");
+      //  delegate2.startNewMpGame();
+        logicData = new LogicData();
+        setF = new SetFigure();
+        board = new SetFigure();
+        setF.createSetFigure();
+        board.cleanSet();
+
+    }
+
 }
 

@@ -7,6 +7,25 @@
 
     <group android:checkableBehavior="single">
 
+        <item android:title="New Game">
+            <menu>
+                <item
+                    android:id="@+id/nav_new_2_players_game"
+                    android:icon="@drawable/nav_new_2_players_game"
+                    android:title="New 2 Players Game" />
+
+                <item
+                    android:id="@+id/nav_new_single_player_game"
+                    android:icon="@drawable/nav_new_single_player_game"
+                    android:title="New Player Vs AI Game" />
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
         <item android:title="Profile Options">
             <menu>
                 <item
@@ -17,10 +36,10 @@
                     android:id="@+id/nav_history"
                     android:icon="@drawable/ic_history_red_24dp"
                     android:title="History" />
-                <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="Share" />
+                <!--<item-->
+                    <!--android:id="@+id/nav_share"-->
+                    <!--android:icon="@drawable/ic_menu_share"-->
+                    <!--android:title="Share" />-->
 
             </menu>
         </item>
@@ -34,10 +53,11 @@
                 android:icon="@drawable/ic_info_black_24dp"
                 android:title="Game Rules" />
 
-            <item
-                android:id="@+id/nav_pop_win"
-                android:icon="@drawable/ic_info_black_24dp"
-                 android:title="Pop-Up Win Message" />
+            <!--<item-->
+                <!--android:id="@+id/nav_pop_win"-->
+                <!--android:icon="@drawable/ic_info_black_24dp"-->
+                 <!--android:title="Pop-Up Win Message" />-->
+
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/ic_settings_green_24dp"

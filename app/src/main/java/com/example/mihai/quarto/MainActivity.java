@@ -41,7 +41,7 @@ public class MainActivity extends Activity implements OnClickListener,
     TextView text;
     GridView setGrid, boardGrid;
     Button btn;
-    Button btnRules;
+  //  Button btnNewGame;
     Button PopUpButton;
     Button btnWin;
     public static RunGame run;
@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements OnClickListener,
         boardGrid = (GridView) findViewById(R.id.gridBoard);
         setGrid = (GridView) findViewById(R.id.gridSet);
         btn = (Button) findViewById(R.id.button1);
-      //  btnRules = (Button) findViewById(R.id.buttonRules);
+       // btnNewGame = (Button) findViewById(R.id.btnNewGame);
      //   btnWin = (Button) findViewById(R.id.winButton);
         text = (TextView) findViewById(R.id.instructions);
         //PopUpButton = findViewById(R.id.popupButton);
@@ -85,6 +85,14 @@ public class MainActivity extends Activity implements OnClickListener,
         boardGrid.setOnItemClickListener(this);
         setGrid.setOnItemClickListener(this);
         btn.setOnClickListener(this);
+//        btnNewGame.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                start();
+//                f5();
+//            }
+//        });
 //        btnRules.setOnClickListener(new OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
@@ -160,7 +168,9 @@ public class MainActivity extends Activity implements OnClickListener,
                 break;
             case   R.id.action_settings: {
                 return true;
-            }    
+            }
+
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -173,21 +183,44 @@ public class MainActivity extends Activity implements OnClickListener,
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            // Handle the camera action
+            startActivity(new Intent(MainActivity.this, ProfilesHandlerActivity.class));
         } else if (id == R.id.nav_history) {
 
-        } else if (id == R.id.nav_share) {
+        }
 
-        } else if (id == R.id.nav_rules) {
+//        else if (id == R.id.nav_share) {
+//
+//        }
+        else if (id == R.id.nav_rules) {
             startActivity(new Intent(MainActivity.this, PopRules.class));
 
 
         } else if (id == R.id.nav_settings) {
             startActivity(new Intent(MainActivity.this, Activity_options.class));
 
-        }else if (id == R.id.nav_pop_win) {
-            startActivity(new Intent( MainActivity.this, PopWin.class));
         }
+//        else if (id == R.id.nav_pop_win) {
+//            startActivity(new Intent( MainActivity.this, PopWin.class));
+//        }
+        else if (id == R.id.nav_new_2_players_game){
+            start();
+            f5();
+        }
+
+
+        else if (id == R.id.nav_new_single_player_game){
+            start();
+            f5();
+        }
+
+//The functionality for single player gamemust first be created in order to initalize the sp vs ai game buton !
+//        else if (id == R.id.nav_new_single_player_game){
+//            start();
+//            f5();
+//
+//        }
+
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
